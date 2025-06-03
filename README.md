@@ -1,8 +1,10 @@
 ## Acerca de este proyecto
 
-Proyecto de ejemplo creado para la clase de desarrollo de aplicaciones móviles para Android, con el objetivo de crear una pequeña API con un CRUD simple para demostrar los diferentes verbos de HTTP y mostrar como consumir el API desde un cliente o una aplicación esterna. No contiene autenticación, solo para fines demostrativos
+Proyecto de ejemplo creado para la clase de desarrollo de aplicaciones móviles para Android, con el objetivo de crear una pequeña API con un CRUD simple para demostrar los diferentes verbos de HTTP y mostrar como consumir el API desde un cliente o una aplicación externa. No contiene autenticación, solo para fines demostrativos
 
 ### EndPoints de la API
+
+Asumiento que ejecutas el servidor de desarrollo de Laravel con el comando `php artisan serve` sin aplicar ningun flag al comando artisan.
 
 - **http://127.0.0.1:8000/api/projects** Por método **GET** devuelve todos los registros de la tabla projects.
 - **http://127.0.0.1:8000/api/projects/projects** Por el método **POST** crea un nuevo registro en la tabla de projects el la base de datos.
