@@ -1,3 +1,7 @@
+# laravel-api-rest
+
+API Rest en Laravel.
+
 ## Acerca de este proyecto
 
 Proyecto de ejemplo creado para la clase de desarrollo de aplicaciones móviles para Android, con el objetivo de crear una pequeña API con un CRUD simple para demostrar los diferentes verbos de HTTP y mostrar como consumir el API desde un cliente o una aplicación externa. No contiene autenticación, solo para fines demostrativos
