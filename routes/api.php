@@ -22,6 +22,7 @@ Route::middleware('auth:sanctum')->group(function() {
     Route::get('/projects/{id}', [ProjectController::class, 'show']);
     Route::patch('/projects/{id}', [ProjectController::class, 'update']);
     Route::delete('/projects/{id}', [ProjectController::class, 'destroy']);
+    Route::post('/logout', [AuthController::class, 'logout']);
 });
 
 

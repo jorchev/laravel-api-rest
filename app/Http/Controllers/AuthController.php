@@ -70,4 +70,25 @@ class AuthController extends Controller
         ]);
     }
 
+    public function logout(Request $request)
+    {
+        $user = $request->user();
+
+        if($request->has('all') && $request->boolean('all')) {
+            // Revoca todos los tokens del usuario (logout global)
+            $user->tokens()->delete();
+
+            return response()->json([
+                'message' => 'Sessión cerrada en todos los dispositivos.'
+            ]);
+        }
+
+        // Revoca solo el token actual (logout local)
+        $user->currentAccessToken()->delete();
+
+        return response()->json([
+            'message' => 'Sesión cerrada exitosamente.'
+        ]);
+    }
+
 }
